@@ -20,7 +20,7 @@ variables:
   tag: '$(Build.BuildId)'
   
   # Container App
-  containerAppName: 'test-todos-api' # Nombre exacto de tu Container App
+  containerAppName: 'test-todos-api-ca' # Nombre exacto de tu Container App
   resourceGroupName: 'rg-app-testing'  # RG donde está la Container App
   azureResourceManagerConnection: 'AzureRM-microservice' # Connection a tu suscripción de Azure
 
@@ -29,7 +29,7 @@ stages:
   displayName: Build and Push stage
   jobs:
   - job: Build
-    displayName: Build and Push ToDo's API
+    displayName: Build and Push ToDos API
     pool:
       vmImage: $(vmImageName)
     steps:
