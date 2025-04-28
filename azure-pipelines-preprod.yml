@@ -13,7 +13,7 @@ variables:
   # Azure Container Registry connection details
   # IMPORTANT: Replace 'YourACRServiceConnectionName' with the actual name of your ACR Service Connection in Azure DevOps
   dockerRegistryServiceConnection: 'ACR-preprod-acrregistry-Connection' # Updated Service Connection Name
-  acrLoginServer: 'azureRM-preprod.azurecr.io' # Updated ACR Login Server
+  acrLoginServer: 'preprodacruhp9wz.azurecr.io' # Updated ACR Login Server
   imageRepository: 'todos-api' # Name for the image in ACR
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   buildContextPath: '$(Build.SourcesDirectory)'
